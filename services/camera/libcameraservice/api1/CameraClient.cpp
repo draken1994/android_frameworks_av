@@ -807,7 +807,7 @@ void CameraClient::notifyCallback(int32_t msgType, int32_t ext1,
         }
         LOG2("MtknotifyCallback(0x%x, 0x%x)", ext1, ext2);
     }
-#endi
+#endif
 
     sp<CameraClient> client = static_cast<CameraClient*>(getClientFromCookie(user).get());
     if (client.get() == nullptr) return;
