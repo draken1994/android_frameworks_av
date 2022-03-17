@@ -147,10 +147,6 @@ LOCAL_SHARED_LIBRARIES += \
         libdl \
         libRScpp \
 
-ifeq ($(MTK_HARDWARE), true)
-LOCAL_CFLAGS += -DMTK_HARDWARE
-endif
-
 ifeq ($(BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21), true)
 # This needs flag requires the following string constant in
 # CameraParametersExtra.h:
